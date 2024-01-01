@@ -7,4 +7,6 @@ def get_val(collection, key, default='git'):
     :return: значение в словаре по заданному ключу, если ключ существует
     в противном случае возвращает 'git'
     """
-    pass
+    if key in collection:
+        return collection[key]
+    return default
