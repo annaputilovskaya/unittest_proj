@@ -8,11 +8,11 @@ class TestDicts(unittest.TestCase):
             1: 'one',
             '2': 'two',
             (1, 2, 3): 'three'
-        }, 1) == 'one')
-        self.assertEqual(get_val({}, 2) == 'git')
+        }, 1), 'one')
+        self.assertEqual(get_val({}, 2), 'git')
         self.assertEqual(get_val({
             1: 'one',
             '2': 'two',
             (1, 2, 3): 'three'
-        }, 2, default='error') == 'error')
+        }, 2, default='error'), 'error')
 
